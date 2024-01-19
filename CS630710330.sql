@@ -2,9 +2,7 @@ select customer_id,customer_name,city,order_count from customers where city='Mor
 
 insert into `customers` value ('07-1137077','Audi','SU-Land',0);
 
-UPDATE customers
-SET customer_name = 'Anna'
-WHERE customer_id = '71-4595008';
+UPDATE customer SET customer_name = 'Anna' WHERE customer_id = '71-4595008';
 
 select customer_id,Max(order_date) As latest_your_order from orders group by customer_id;
 
